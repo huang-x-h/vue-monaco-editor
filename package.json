@@ -1,7 +1,8 @@
 {
+  "private": true,
   "name": "vue-monaco-editor",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vue component for monaco-editor",
   "main": "./dist/vue-monaco-editor.ssr.js",
   "module": "./dist/vue-monaco-editor.esm.js",
   "scripts": {
