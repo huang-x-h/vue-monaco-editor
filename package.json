@@ -1,0 +1,20 @@
+{
+  "name": "vue-monaco-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/vue-monaco-editor.ssr.js",
+  "module": "./dist/vue-monaco-editor.esm.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production"
+  },
+  "keywords": [
+    "monaco-editor"
+  ],
+  "author": "huang.xinghui <huang.x.hui@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.66.5",
+    "rollup-plugin-vue": "^4.3.2",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
