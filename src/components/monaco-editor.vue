@@ -11,12 +11,16 @@ export default {
   mounted: function() {
     let self = this;
     MonacoLoader.load(monaco => {
-      monaco.editor.create(self.$el, {
+      self.editor = monaco.editor.create(self.$el, {
         value: self.value,
         language: self.language,
         theme: self.theme
       });
     });
+  },
+
+  destroyed: function() {
+    if (this.editor) this.editor.dispose();
   }
 };
 </script>

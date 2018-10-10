@@ -17,6 +17,10 @@ export default {
         modified: monaco.editor.createModel(self.modified, self.language)
       });
     });
+  },
+
+  destroyed: function() {
+    if (this.editor) this.editor.dispose();
   }
 };
 </script>
